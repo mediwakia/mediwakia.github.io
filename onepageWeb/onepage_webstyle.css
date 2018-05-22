@@ -97,7 +97,7 @@ body{
 		background-color: rgba(60, 56, 57, 0.7);
 		color: #ECA656;
 		list-style: none;
-		padding: 4px 10px;
+		padding: 7px 10px;
 		font-size: 20px;
 		list-style: none;
 		border:solid 2px #000000;
@@ -247,6 +247,27 @@ html, body {
       color: #FAFFE6;
       
     }
+    /* header_slider */
+	.slide_picstyleA{
+    	width: 100%;
+    	background-size: cover;
+      	background-position: center;
+      	margin: 0 auto;
+    }
+    .slide_picstyleB{
+    	width: 100%;
+    	background-size: cover;
+      	background-position: center;
+      	margin: 0 auto;
+    }
+    .slide_picstyleC{
+    	width: 100%;
+    	background-size: cover;
+      	background-position: center;
+      	margin: 0 auto;
+    }
+	
+	/* exp_design_slider pc */
     .slide_picstyle{
     	width: 100%;
     	background-size: cover;
@@ -271,6 +292,36 @@ html, body {
       	background-position: center;
       	margin: 0 auto;
     }
+	/* exp_design_slider mobile */
+	.slide_picstyle_mo{
+    	width: 100%;
+    	background-size: cover;
+      	background-position: center;
+      	margin: 0 auto;
+      	display: none;
+    }
+    .slide_picstyle2_mo{
+    	width: 100%;
+    	background-size: cover;
+      	background-position: center;
+      	margin: 0 auto;
+      	display: none;
+    }
+    .slide_picstyle3_mo{
+    	width: 100%;
+    	background-size: cover;
+      	background-position: center;
+      	margin: 0 auto;
+      	display: none;
+    }
+    .slide_picstyle4_mo{
+    	width: 100%;
+    	background-size: cover;
+      	background-position: center;
+      	margin: 0 auto;
+      	display: none;
+    }
+
 	/* swiper */
 
 	#reason{
@@ -769,7 +820,30 @@ html, body {
 		.logo_pic{
 			height: 250px;
 		}
-
+		.slide_picstyle{
+			display: none;
+		}
+		.slide_picstyle2{
+			display: none;	
+		}
+		.slide_picstyle3{
+			display: none;	
+		}
+		.slide_picstyle4{
+			display: none;	
+		}
+		.slide_picstyle_mo{
+			display: block;
+		}
+		.slide_picstyle2_mo{
+			display: block;	
+		}
+		.slide_picstyle3_mo{
+			display: block;	
+		}
+		.slide_picstyle4_mo{
+			display: block;	
+		}
 	}
 
 	@media screen and (min-width: 415px) and (max-width: 532px){

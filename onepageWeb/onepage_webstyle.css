@@ -87,7 +87,8 @@ body{
 		}
 
 	.navbarMobile > ul.active {
-		height: 230px;
+		border: solid 1px;
+		height: 240px;
 		z-index: 2;
 		}
 	.navbarMobile > ul > a{
@@ -832,16 +833,16 @@ html, body {
 		.slide_picstyle4{
 			display: none;	
 		}
-		.slide_picstyle_mo{
+		.text .slide_picstyle_mo{
 			display: block;
 		}
-		.slide_picstyle2_mo{
+		.text .slide_picstyle2_mo{
 			display: block;	
 		}
-		.slide_picstyle3_mo{
+		.text .slide_picstyle3_mo{
 			display: block;	
 		}
-		.slide_picstyle4_mo{
+		.text .slide_picstyle4_mo{
 			display: block;	
 		}
 	}

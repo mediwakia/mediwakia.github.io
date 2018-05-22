@@ -1,0 +1,877 @@
+*{
+	box-sizing: border-box;
+	font-family: 微軟正黑體;
+	
+}
+body{
+	margin: 0;
+}
+
+.all_background{
+	background-color: #000000;
+}
+
+.logo_pic{
+	width: 100%;
+	height: 300px;
+	background-color: #556687;
+	background-image: url('img/background/deus_style2.jpg');
+	background-size: cover;
+	background-position:center;	
+}
+
+/* navbarmobile */
+	.navbarMobile{
+		background-color: #3C3839;
+		position: relative;
+		width: 100%;
+		height: 80px;
+		display: none;
+		position: fixed;
+		z-index: 3;
+
+	}
+	.navbarMobile .collapse{
+		width: 60px;
+		height: 60px;
+		border: solid 1px;
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		transform: translateY( -50%);
+	}
+	
+	.navbarMobile .collapse .line{
+		width: 40px;
+		height: 8px;
+		background-color: #ECA656;
+		border: solid 1px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate( -50%, -50%);
+		transition-duration: 0.4s;
+
+	}
+	.navbarMobile .collapse .line:nth-child(1) {
+		top: 25%;
+	}
+	.navbarMobile .collapse .line:nth-child(2) {
+		top: 50%;
+	}
+	.navbarMobile .collapse .line:nth-child(3) {
+		top: 75%;
+	}
+	.navbarMobile .collapse .line:nth-child(1).active{
+		transform:translate(-50%, -50%) rotate(135deg);
+		top:50%;
+	}
+	.navbarMobile .collapse .line:nth-child(2).active{
+		opacity: 0;
+	}
+	.navbarMobile .collapse .line:nth-child(3).active{
+		transform:translate(-50%, -50%) rotate(-135deg);
+		top: 50%;
+	}
+
+	
+
+	.navbarMobile > ul{
+		background-color:rgba(61, 81, 98, 0.8 );
+		position: relative;
+		top: 60px;
+		height: 0;
+		overflow: hidden;
+		padding: 0;
+		transition: all 0.3s ease-out;
+		}
+
+	.navbarMobile > ul.active {
+		height: 230px;
+		z-index: 2;
+		}
+	.navbarMobile > ul > a{
+		text-decoration: none;
+	}
+	.navbarMobile > ul > a >li{
+		background-color: rgba(60, 56, 57, 0.7);
+		color: #ECA656;
+		list-style: none;
+		padding: 4px 10px;
+		font-size: 20px;
+		list-style: none;
+		border:solid 2px #000000;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		position: relative;
+		}
+
+
+
+
+.navbar{
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	background-color:rgba(61, 81, 98, 0.9 );
+	padding:0;
+	z-index: 3;
+}
+.navbar .container{
+	width: 100%;
+}
+
+	.logo_design{
+		width: 80px;
+		height: 80px;
+		background-color: #394656;
+		border: solid 1px;
+		border-radius:40px ;
+		background-image: url('img/background/Logo_Design03.png');
+		background-size: cover;
+		background-position:center;
+		float: left;
+		margin-top: 10px;
+		
+	}
+	.logo_title{
+		height: 100px;
+		float: left;
+		
+	}
+	.logo_titlestyle{
+		color:#EEE2DA ;
+		font-size: 24px;
+		font-weight: 400;
+		margin: 0;
+		margin-top: 30px;
+		padding: 0;
+		
+	}
+
+.navbar ul{
+	height: 100px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items:center;
+	padding: 0;
+	margin: 0;
+}
+.navbar ul a{
+	margin-top: -10px;
+	text-decoration: none;
+}
+.navbar ul a li{
+	background-color: #3C3839;
+	color: #ECA656;
+	padding: 4px 10px;
+	border-radius: 6px;
+	border:solid 2px #000000;
+	font-size: 20px;
+	list-style: none;
+	position: relative;
+
+
+}
+.navbar ul li:hover{
+		color:#686461 ;
+		background-color: #F4D399;
+		transition-duration:0.6s; 
+}
+	
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+#header{
+	padding-top: 30px;
+}
+	/* swiper */
+
+html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 80%;
+      margin: 0 auto;
+      /* height: 750px; */
+      background-color:rgba(61, 81, 98, 0.2 );
+
+    }
+    
+    .swiper-slide {
+      font-size: 18px;
+      color:#fff;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 40px 60px;
+      
+    }
+    .parallax-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 130%;
+      height: 100%;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      
+
+    }
+    .swiper-slide .title {
+      font-size: 30px;
+      font-weight: 300;
+      color: #ECA656;
+    }
+    .swiper-slide .subtitle {
+      font-size: 24px;
+      color: #ffffff;
+    }
+    .swiper-slide .text {
+      font-size: 20px;
+      width: 100%;
+      line-height: 1.3;
+      color: #FAFFE6;
+      
+    }
+    .slide_picstyle{
+    	width: 100%;
+    	background-size: cover;
+      	background-position: center;
+      	margin: 0 auto;
+    }
+    .slide_picstyle2{
+    	width: 100%;
+    	background-size: cover;
+      	background-position: center;
+      	margin: 0 auto;
+    }
+    .slide_picstyle3{
+    	width: 100%;
+    	background-size: cover;
+      	background-position: center;
+      	margin: 0 auto;
+    }
+    .slide_picstyle4{
+    	width: 100%;
+    	background-size: cover;
+      	background-position: center;
+      	margin: 0 auto;
+    }
+	/* swiper */
+
+	#reason{
+		padding-top: 40px;
+		}
+		.reason_intro{
+			width: 100%;
+			height: 550px;
+			border: solid 1px;
+			background-color:#2F353B;
+			border: solid 1px;
+			}
+		.reason_intro .intro_L{
+			width: 50%;
+			height: 100%;
+			float: left;
+			background-image: url('img/box2_reason/lizard fighter.jpg');
+			background-size: cover;
+			background-position:center;
+			border: solid 1px;
+			transition: background-image 0.3s ease-out 0.3s;
+		}
+		.reason_intro .intro_L:hover{
+			background-image: url('img/box2_reason/Warhammer_lizard.jpg');
+			transition: background-image 0.3s ease-out 0.3s;
+		}	
+
+		.reason_intro .intro_R{
+			width: 50%;
+			height: 100%;
+			float: left;
+		}
+		.reason_title{
+			color:#CBD4DE ;
+			padding: 15px 15px;
+			font-size: 30px;
+			font-weight: 400;
+		}
+		.reason_word{
+			color:#CCAE6B;
+			font-size: 20px;
+			letter-spacing: 0.8px;
+			padding: 0 15px;
+		}
+	
+	#tra_example{
+		width: 80%;
+		margin:0 auto; 
+		margin-top: 40px;
+		border: solid 1px;
+		background-image: url('img/background/img60040073.jpg');
+		background-size: cover;
+		background-position:center;
+		background-attachment: fixed ;
+
+	}
+		.container .tra_word{
+			width: 80%;
+			margin: 0 auto;
+			background-color:rgba(61, 81, 98, 0.6 ); 
+		}
+		.tra_word .tra_title{
+			color:#CBD4DE ;
+			padding: 15px 15px;
+			font-size: 30px;
+			font-weight: 400;
+			text-align: center;	
+		}
+		.tra_word .tra_word{
+			color:#CCAE6B;
+			font-size: 20px;
+			letter-spacing: 0.8px;
+			padding: 10px;
+		}
+
+		.container .tra_picword{
+			width: 100%;
+			height: 750px;
+			padding-bottom: 40px;
+		}
+		.container .tra_picword .tra_L{
+			width: 40%;
+			height: 100%;
+			float: left;
+		}
+			.tra_L .L_up{
+				width: 100%;
+				height: 70%;
+				background-image: url('img/box3_tra/chu.jpg');
+				background-size: cover;
+				background-position:center;
+				border: solid 1px;
+				transition: background-image 0.3s ease-out 0.3s;	
+			}
+
+			.tra_L .L_up:hover{
+				background-image: url('img/box3_tra/chu2.jpg');
+				transition: background-image 0.3s ease-out 0.3s;
+			}
+
+			.tra_L .L_down{
+				width: 100%;
+				height: 30%;
+				background-color:rgba(61, 81, 98, 0.8 );
+				border: solid 1px;
+			}
+		.container .tra_picword .tra_R{
+			width: 60%;
+			height: 100%;
+			float: left;
+		}
+			.tra_R .R_up{
+				width: 100%;
+				height: 70%;
+				background-image: url('img/box3_tra/gorfi.jpg');
+				background-size: cover;
+				background-position:center;
+				border: solid 1px;
+				transition: background-image 0.3s ease-out 0.3s;
+			}
+
+			.tra_R .R_up:hover{
+				background-image: url('img/box3_tra/gorfi2.jpg');
+				transition: background-image 0.3s ease-out 0.3s;
+			}
+
+			.tra_R .R_down{
+				width: 100%;
+				height: 30%;
+				background-color:rgba(61, 81, 98, 0.8 );
+				border: solid 1px;
+			}
+			.tra_pictitle{
+				color:#D9AF67;
+				margin: 0;
+				padding-top: 10px;
+				font-size: 24px;
+				text-align: center;
+			}
+			.monster_picword{
+				color:#F8E4AF;
+				font-size: 18px;
+				letter-spacing: 0.6px;
+				text-align: center;
+			}
+
+	#experiment_design{
+		width: 80%;
+		margin:0 auto; 
+		margin-top: 40px;
+		background-image: url('img/background/designbg.jpg');
+		background-size: cover;
+		background-position:center;
+		background-attachment: fixed ;
+	}
+
+		.container .design_word{
+			width: 80%;
+			margin: 0 auto;
+			background-color:rgba(61, 81, 98, 0.6 );
+			margin-bottom:50px; 
+		}
+			.design_word .design_title{
+				color:#CBD4DE ;
+				font-size: 30px;
+				font-weight: 400;
+				text-align: center;
+				padding-top: 10px;
+				margin: 0;
+				margin-top: 30px;
+			}
+			.design_word .design_intro{
+				color:#CCAE6B;
+				font-size: 20px;
+				letter-spacing: 0.8px;
+				padding: 15px 10px;
+				margin: 0;
+				margin-bottom:30px; 
+			}
+		.ABtitle{
+			color:#CBD4DE ;
+			padding: 15px 15px;
+			font-size: 26px;
+			text-align: center;
+		}
+		.design_A{
+			margin-bottom:50px;
+		}
+			
+
+		.design_B{
+			margin-bottom:50px;
+			padding-bottom: 50px;
+		}
+			
+
+	#fantasty_creatures{
+		width: 80%;
+		margin:0 auto; 
+		margin-top: 40px;
+		border: solid 1px;
+		background-image: url('img/background/fan_bg.jpg');
+		background-size: cover;
+		background-position:center;
+		background-attachment: fixed ;
+	}	
+	#fantasty_creatures .container{
+		width: 94%;
+		margin:0 auto;
+	}
+		.container .fantasty_word{
+			width: 80%;
+			margin: 0 auto;
+			background-color:rgba(51, 71, 90, 0.6 );
+			margin-top:40px;
+			margin-bottom: 20px;
+			border: solid 1px;
+		}
+			.fantasty_word .fantasty_title{
+				color:#CBD4DE ;
+				font-size: 30px;
+				font-weight: 400;
+				text-align: center;
+				padding-top: 10px;
+				margin: 0;
+				margin-top: 30px;
+			}
+			.fantasty_word .fantasty_intro{
+				color:#CCAE6B;
+				font-size: 20px;
+				letter-spacing: 0.8px;
+				padding: 15px 10px;
+				margin: 0;
+				margin-bottom:30px;
+			}
+		.container .creatures_example{
+			width: 100%;
+			display: flex; 						
+			flex-direction: row;
+			flex-wrap: wrap; 					
+			justify-content: space-evenly;  	
+			align-content: space-evenly;
+			margin-bottom:50px;
+		}
+			.creatures_example .item{
+				width: 30%;
+				height: 480px;
+				border: solid 1px;
+				background-color:rgba(51, 71, 90, 0.6 );
+				margin: 10px; 
+			}
+			.item_pic{
+				width: 100%;
+				height: 70%;
+				border:solid 1px ;
+				background-size: cover;
+				background-position:center;
+				background-color:rgba(51, 71, 90, 0.6 );
+				transition-duration:0.4s;
+				opacity: 0.6;
+			}
+			.item_pic:hover{
+				opacity: 1;
+			}
+
+				.monster_pic1{
+				background-image: url('img/box5_monster/levelA_L.jpg');
+				}
+				.monster_pic2{
+				background-image: url('img/box5_monster/levelA_M.jpg');
+				}
+				.monster_pic3{
+				background-image: url('img/box5_monster/levelA_R.jpg');	
+				}
+				.monster_pic4{
+				background-image: url('img/box5_monster/levelB_L.jpg');	
+				}
+				.monster_pic5{
+				background-image: url('img/box5_monster/levelB_M.jpg');	
+				}
+				.monster_pic6{
+				background-image: url('img/box5_monster/levelB_R.jpg');	
+				}
+				.monster_pic7{
+				background-image: url('img/box5_monster/levelC_L.jpg');	
+				}
+				.monster_pic8{
+				background-image: url('img/box5_monster/levelC_M.jpg');	
+				}
+				.monster_pic9{
+				background-image: url('img/box5_monster/levelC_R.jpg');	
+				}
+				.monster_pic10{
+				background-image: url('img/box5_monster/levelD_L.jpg');	
+				}
+				.monster_pic11{
+				background-image: url('img/box5_monster/levelD_M.jpg');	
+				}
+				.monster_pic12{
+				background-image: url('img/box5_monster/levelD_R.jpg');	
+				}
+
+			.item_intro{
+				width: 100%;
+				height: 30%;
+			}
+			.fantasty_picword{
+				color:#F8E4AF;
+				font-size: 18px;
+				letter-spacing: 0.6px;
+				text-align: left;
+				padding-left: 10px;
+			}
+	#aboutus{
+		width: 100%;
+		background-image: url('img/background/deus_style3.jpg');
+		background-size: cover;
+		background-position:center;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+	
+	.container_left{
+		width: 50%;
+		height: 400px;
+		float: left;
+	}
+		.ul_left{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			padding: 0;
+			margin: 0;
+		}
+		.ul_left li{
+			background-color: #3C3839;
+			color: #ECA656;
+			padding: 4px 10px;
+			border-radius: 6px;
+			border:solid 2px #000000;
+			font-size: 20px;
+			list-style: none;
+		}
+
+	.container_right{
+		width: 50%;
+		height: 400px;
+		float: left;
+	}
+		.ul_right{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			padding: 0;
+			margin: 0;
+		}
+		.ul_right li{
+			background-color: #3C3839;
+			color: #ECA656;
+			padding: 4px 10px;
+			border-radius: 6px;
+			border:solid 2px #000000;
+			font-size: 20px;
+			list-style: none;
+		}
+		.container_right ul h5{
+			color:#F8E4AF;
+			font-size: 18px;
+			letter-spacing: 0.6px;
+			text-align: left;
+			margin: 0;
+		}
+	.clear-both {
+		clear: both;
+	}
+
+		
+	@media screen and (min-width: 1440px) and (max-width: 1920px){
+		.creatures_example .item{
+			width: 25%;}
+	}
+
+	@media screen and (min-width: 533px) and (max-width: 1024px){
+		/* reason */
+		.reason_intro{
+			width: 100%;
+			height: 1000px;	
+		}
+		.reason_intro .intro_L{
+			width: 80%;
+			height: 50%;
+			margin: 0 auto;
+			float: none;
+		}
+		.reason_intro .intro_R{
+			width: 80%;
+			height: 50%;
+			margin: 0 auto;
+			float: none;
+		}
+		/* tra_example */
+		.container .tra_word{
+			width: 100%;
+		}
+		.container .tra_picword{
+			height: 1500px;
+		}
+		.container .tra_picword .tra_L{
+			width: 120%;
+			height: 48%;
+			float: none;
+			margin: 0 auto;
+		}
+		.container .tra_picword .tra_R{
+			width: 80%;
+			height: 48%;
+			float: none;
+			margin: 0 auto;
+		}
+		.container .tra_picword .tra_L{
+			width: 70%;
+			margin: 0 auto;
+		}
+		
+		/* creatures_example */
+		.creatures_example .item{
+			width: 45%;
+		}
+		
+	}
+	@media screen and (max-width: 760px){
+		.container{
+			width: 100%;
+		}
+		.swiper-container{
+			width: 100%;
+		}
+		#tra_example{
+			width: 100%;
+		}
+		.container .tra_word{
+			width: 80%;
+			margin: 0 auto;
+		}
+		#experiment_design{
+			width: 100%;
+		}
+		#fantasty_creatures{
+			width: 100%;
+		}
+
+		.container_left{
+			width: 100%;
+			height: 300px;
+			margin: 0 auto;
+		}
+		.container_right{
+			width: 100%;
+			height: 300px;
+			margin: 0 auto;
+		}
+	}
+	@media screen and (max-width: 576px){
+		.navbar{
+			display: none;
+			}
+		.navbarMobile{
+			display: block;
+			}
+		.logo{
+			position: absolute;
+			}
+		.logo_design{
+			width: 60px;
+			height: 60px;
+			border-radius:30px ;
+			margin-top: 10px;
+			margin-left: 10px;
+		
+			}
+		.logo_title{
+			height: 100px;
+			float: left;
+		
+			}
+		.logo_titlestyle{
+			font-size: 20px;
+			margin-top: 23px;
+			}
+		.logo_pic{
+			height: 250px;
+		}
+
+	}
+
+	@media screen and (min-width: 415px) and (max-width: 532px){
+		/* reason */
+		.reason_intro{
+			width: 100%;
+			height: 1000px;	
+		}
+		.reason_intro .intro_L{
+			width: 100%;
+			height: 50%;
+			margin: 0 auto;
+			float: none;
+		}
+		.reason_intro .intro_R{
+			width: 100%;
+			height: 50%;
+			margin: 0 auto;
+			float: none;
+		}
+		.reason_title{
+			margin: 0;
+		}
+		
+		/* tra_example */
+		.container .tra_word{
+			width: 100%;
+		}
+		.container .tra_picword{
+			height: 1500px;
+		}
+		.container .tra_picword .tra_L{
+			width: 100%;
+			height: 48%;
+			float: none;
+			margin: 0 auto;
+		}
+		.container .tra_picword .tra_R{
+			width: 100%;
+			height: 48%;
+			float: none;
+			margin: 0 auto;
+		}
+
+		/* creatures_example */
+		.creatures_example .item{
+			width: 80%;
+		}
+		.fantasty_picword{
+			padding-left:15px ;
+		}
+	}
+
+	@media screen and (max-width: 414px){
+		/* reason */
+		.reason_intro{
+			width: 100%;
+			height: 1100px;	
+		}
+		.reason_intro .intro_L{
+			width: 100%;
+			height: 50%;
+			margin: 0 auto;
+			float: none;
+		}
+		.reason_intro .intro_R{
+			width: 100%;
+			height: 50%;
+			margin: 0 auto;
+			float: none;
+		}
+		.reason_title{
+			margin: 0;
+		}
+		
+		/* tra_example */
+		.container .tra_word{
+			width: 100%;
+		}
+		.container .tra_picword{
+			height: 1500px;
+		}
+		.container .tra_picword .tra_L{
+			width: 100%;
+			height: 48%;
+			float: none;
+			margin: 0 auto;
+		}
+		.container .tra_picword .tra_R{
+			width: 100%;
+			height: 48%;
+			float: none;
+			margin: 0 auto;
+		}
+
+		/* creatures_example */
+		.creatures_example .item{
+			width: 80%;
+		}
+		.fantasty_picword{
+			padding-left:20px ;
+		}
+	}
+	
+		
